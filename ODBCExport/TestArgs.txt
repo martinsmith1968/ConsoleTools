@@ -1,0 +1,10 @@
+﻿#/ShowCommands+
+#/s:s_esn2_ext /d:kmi "select * from service" /ofmt:XML
+#/s:s_esn2_ext /d:kmi "select * from region" /ofmt:XML /q
+#/s:s_esn2_ext /d:kmi "select * from job" /ofmt:XML /q
+#/s:s_esn2_ext /d:kmi "select * from module" /srr:- /ofmt:XML /of:module.xml
+#/s:ol_sandhurst0 /d:ormtest "ormtestchild" /ofmt:SQL
+#/s:ol_sandhurst0 /d:sysadmin "ph_task" /ofmt:SQL
+#/s:ol_sandhurst0 /d:postsharptrace "methods" /ofmt:SQL
+#/s:ol_sandhurst0 /d:datagenerator "largetable" /ofmt:SQL /of:largetable.data.sql
+/s:"test-vm" "mon_dbspace" /ofmt:SQL

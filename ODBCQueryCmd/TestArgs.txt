@@ -1,0 +1,9 @@
+﻿#/ShowCommands+
+#/s:ol_sandhurst0 /d:postsharptrace "select * from systables"
+#/s:s_esn2_ext /d:kmi "select * from region" /ofmt:XML /q
+#/s:s_esn2_ext /d:kmi "select * from job" /ofmt:XML /q
+#/s:s_esn2_ext /d:kmi "select * from module" /srr:- /ofmt:XML /of:module.xml
+
+#/s:ol_sandhurst0 /d:postsharptrace /ofmt:ISQL /e:Results /srs:+ "SELECT FIRST 50 * FROM methods WHERE tracename='Perf1.KMI' AND methodeventtype='Exit' AND executiontime > 2 ORDER BY executiontime DESC"
+#/s:oscarvm10 /d:kmi "select count(*) from largetable;"
+/s:oscarvm11 /d:kmi "select * from largetable where id < 10;"

@@ -1,0 +1,7 @@
+﻿#/l
+#timertest /l
+#timertest /c:Start
+#timertest /c:Stop
+#timertest /c:delete
+#timertest /c:Elapsed
+/z:+
