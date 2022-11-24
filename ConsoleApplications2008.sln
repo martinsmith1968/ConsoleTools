@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathList", "PathList\PathList.csproj", "{72100DF5-3F3B-4936-AA3D-8B24E1B71483}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NRA.Util", "NRA.Util\NRA.Util.csproj", "{E4D166F7-65F0-43FB-AAFC-811689F9BE37}"
@@ -136,5 +138,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B543DBA-AD8F-46BF-8D68-8D5AC60490E4}
 	EndGlobalSection
 EndGlobal
