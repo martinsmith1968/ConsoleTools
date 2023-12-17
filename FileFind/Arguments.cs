@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,7 +32,7 @@ namespace FileFind
         #region Standalone
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [Argument(ArgumentType.BypassMandatory, DefaultValue = false, ShortName = "?", GroupName = "Standalone", HelpText = "Show the Help page")]
         public bool Help;

@@ -1,16 +1,14 @@
-﻿// <copyright file="Query.cs" company="Thales e-Security Ltd">
+// <copyright file="Query.cs" company="Thales e-Security Ltd">
 // Copyright (c) 2010 Thales e-Security Ltd
 // All rights reserved. Company confidential.
 // </copyright>
 //
 // TODO: [Description of Query]
 
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.Odbc;
-using System.IO;
-using System.Threading;
+
+
 
 namespace ODBCConnectionTest
 {

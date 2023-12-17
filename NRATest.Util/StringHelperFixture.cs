@@ -1,14 +1,13 @@
-﻿// <copyright file="StringHelperFixture.cs" company="Thales e-Security Ltd">
+// <copyright file="StringHelperFixture.cs" company="Thales e-Security Ltd">
 // Copyright (c) 2010 Thales e-Security Ltd
 // All rights reserved. Company confidential.
 // </copyright>
 //
 // NUnit Test Cases for [Description of StringHelperFixture]
 
-using System;
-using System.Collections.Generic;
 using NRA.Util;
 using NUnit.Framework;
+using NUnit.Framework.Legacy;
 
 namespace NRATest.Util
 {
@@ -18,66 +17,6 @@ namespace NRATest.Util
     [TestFixture(Description = "Test Cases for [Description of StringHelperFixture]")]
     public class StringHelperFixtureTest
     {
-        #region Fields
-
-        #endregion
-
-        #region Properties
-
-        #endregion
-
-        #region Fixture Level Initialisation / Termination
-
-        /// <summary>
-        /// Sets up this instance.
-        /// </summary>
-        /// <remarks>
-        /// For testing frameworks (E.g. NUnit) this method is called once before any [Test] methods
-        /// </remarks>
-        [TestFixtureSetUp]
-        public void FixtureSetup()
-        {
-        }
-
-        /// <summary>
-        /// Tears down this instance.
-        /// </summary>
-        /// <remarks>
-        /// For testing frameworks (E.g. NUnit) this method is called once after all [Test] methods
-        /// </remarks>
-        [TestFixtureTearDown]
-        public void FixtureTeardown()
-        {
-        }
-
-        #endregion
-
-        #region Individual Test Level Initialisation / Termination
-
-        /// <summary>
-        /// Sets up the test.
-        /// </summary>
-        /// <remarks>
-        /// For testing frameworks (E.g. NUnit) this method is called before each [Test] method
-        /// </remarks>
-        [SetUp]
-        public void TestSetup()
-        {
-        }
-
-        /// <summary>
-        /// Tears down the test.
-        /// </summary>
-        /// <remarks>
-        /// For testing frameworks (E.g. NUnit) this method is called after each [Test] method
-        /// </remarks>
-        [TearDown]
-        public void TestTeardown()
-        {
-        }
-
-        #endregion
-
         #region Test Methods
 
         #region EnsureStartsWith
@@ -90,7 +29,7 @@ namespace NRATest.Util
         {
             // Setup
             var text = "Hello";
-            var prefix = (string)null;
+            string prefix = null;
 
             // Test
             var exception = Assert.Throws<ArgumentNullException>(
@@ -101,7 +40,7 @@ namespace NRATest.Util
                 );
 
             // Assert
-            Assert.AreEqual("prefix", exception.ParamName);
+            ClassicAssert.AreEqual(exception.ParamName, "prefix");
         }
 
         /// <summary>
@@ -118,7 +57,7 @@ namespace NRATest.Util
             var result = StringHelper.EnsureStartsWith(text, prefix);
 
             // Assert
-            Assert.AreEqual("Hello", result);
+            ClassicAssert.AreEqual("Hello", result);
         }
 
         /// <summary>
@@ -135,7 +74,7 @@ namespace NRATest.Util
             var result = StringHelper.EnsureStartsWith(text, prefix);
 
             // Assert
-            Assert.AreEqual("OHello", result);
+            ClassicAssert.AreEqual("OHello", result);
         }
 
         /// <summary>
@@ -152,7 +91,7 @@ namespace NRATest.Util
             var result = StringHelper.EnsureStartsWith(text, prefix);
 
             // Assert
-            Assert.AreEqual("Hello WorldHello", result);
+            ClassicAssert.AreEqual("Hello WorldHello", result);
         }
 
         /// <summary>
@@ -169,7 +108,7 @@ namespace NRATest.Util
             var result = StringHelper.EnsureStartsWith(text, prefix);
 
             // Assert
-            Assert.AreEqual("Hello", result);
+            ClassicAssert.AreEqual("Hello", result);
         }
 
         #endregion

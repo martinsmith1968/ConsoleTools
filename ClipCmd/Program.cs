@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Text;
 using System.Windows.Forms;
 
 namespace ClipCmd
 {
-    class Program
+    internal class Program
     {
         /// <summary>
         /// Program entry point
@@ -24,7 +20,7 @@ namespace ClipCmd
         /// <summary>
         /// Displays the clipboard.
         /// </summary>
-        static public void DisplayClipboard()
+        public static void DisplayClipboard()
         {
             Console.Out.WriteLine(
                 Clipboard.GetText()

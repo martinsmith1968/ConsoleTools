@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Reflection;
-using System.Threading;
 
 namespace ODBCQueryCmd
 {
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public interface ICustomCommand
     {
@@ -16,7 +12,7 @@ namespace ODBCQueryCmd
     }
 
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public abstract class BaseCommand : ICustomCommand
     {
@@ -178,7 +174,7 @@ namespace ODBCQueryCmd
     }
 
     /// <summary>
-    /// 
+    ///
     /// </summary>
     public class RowHashCommand : BaseCommand
     {

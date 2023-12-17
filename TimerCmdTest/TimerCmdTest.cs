@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using TimerCmd;
 using NUnit.Framework;
-using System.Threading;
+using NUnit.Framework.Legacy;
 
 namespace TimerCmdTest
 {
@@ -15,13 +12,13 @@ namespace TimerCmdTest
         [Test]
         public void Test1()
         {
-            TimerCmd.Timer timer = new TimerCmd.Timer("Shite", true);
+            var timer = new TimerCmd.Timer("Shite", true);
 
-            TimeSpan ts = TimeSpan.FromSeconds(3);
+            var ts = TimeSpan.FromSeconds(3);
 
             Thread.Sleep(ts);
 
-            Assert.GreaterOrEqual(timer.TotalElapsedTime, ts);
+            ClassicAssert.GreaterOrEqual(timer.TotalElapsedTime, ts);
         }
     }
 }

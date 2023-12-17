@@ -1,12 +1,10 @@
-﻿// <copyright file="Arguments.cs" company="Thales e-Security Ltd">
+// <copyright file="Arguments.cs" company="Thales e-Security Ltd">
 // Copyright (c) 2010 Thales e-Security Ltd
 // All rights reserved. Company confidential.
 // </copyright>
 //
 // Application Arguments
 
-using System;
-using System.Collections.Generic;
 using NRA.Util.CommandLine;
 
 namespace TimerCmd
@@ -46,13 +44,13 @@ namespace TimerCmd
         #region Main Parameters
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [DefaultArgument(ArgumentType.Required, GroupName = "Main", HelpText = "The name of the Timer")]
         public string Name;
 
         /// <summary>
-        /// 
+        ///
         /// </summary>
         [Argument(ArgumentType.AtMostOnce, DefaultValue = TimerCommand.Elapsed, ShortName = "c", GroupName = "Main", HelpText = "Timer Command to execute")]
         public TimerCommand Command;

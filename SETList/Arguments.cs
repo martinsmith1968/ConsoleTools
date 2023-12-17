@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -44,7 +44,7 @@ namespace SETList
 
         #region Optional
 
-        [Argument(ArgumentType.AtMostOnce, DefaultValue = "", ShortName = "v", GroupName = "Optional", HelpText = "The text that separates individual values")]
+        [Argument(ArgumentType.AtMostOnce, DefaultValue = ";", ShortName = "v", GroupName = "Optional", HelpText = "The text that separates individual values")]
         public string ValueSeparator;
 
         #endregion
